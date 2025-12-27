@@ -1,0 +1,124 @@
+.navbar{
+    height: 100%;
+    width: 75px;
+    background-color: var(--background-light);
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: 100ms;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.navbar:hover{
+    width: 300px;
+    transition: 200ms;
+}
+.navbar .title{
+    width: 300px;
+    height: 200px;
+
+}
+.navbar .title .big{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.navbar .title .big .bold{
+    font-weight: 600;
+    font-size: 22px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: var(--primary-light);
+    border-radius: 5px;
+}
+
+.navbar .body{
+    width: 300px;
+    height: calc(100% - 350px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.navbar .bottom{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.navbar .body .itm{
+    width: calc(100% - 20px);
+    height: 50px;
+    display: flex;
+    background-color: var(--background-dark);
+    margin-bottom: 5px;
+    
+}
+.navbar .body .active{
+    background-color: var(--primary-dark);
+}
+.navbar .body .itm:hover{
+    transition: 200ms;
+    background-color: var(--primary-dark);
+    cursor: pointer;
+
+}
+.navbar .body .itm .left{
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.navbar .body .itm .right{
+    width: calc(100% - 75px);
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar .bottom>div{
+    width: calc(100% - 20px);
+    height: 50px;
+    display: flex;
+    margin-bottom: 5px;
+}
+.navbar .bottom>div .left{
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.navbar .bottom>div .right{
+    width: calc(100% - 75px);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 20px;
+}
+.navbar .bottom .profile .right{
+    font-size: 15px;
+}
+.navbar .bottom .profile .left{
+    font-size: 30px;
+}
+.navbar .bottom .logout{
+    color: red;
+    border: solid 2px red;
+    border-radius: 10px;
+
+}
+.navbar .bottom .logout:hover{
+    background-color: rgb(255, 193, 193);
+    transition: 200ms;
+    cursor: pointer;
+}

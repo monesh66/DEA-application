@@ -1,0 +1,132 @@
+.login{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(234, 229, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.login .loginbox{
+    width: 500px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.login .loginbox .title{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.login .loginbox .title .bold{
+    font-size: 26px;
+    font-weight: 700;
+    color: black;
+}
+.login .loginbox .title .bold2{
+    font-size: 23px;
+    font-weight: 700;
+}
+.login .loginbox .title .t1{
+    font-size: 24px;
+    font-weight: 100;
+    color: rgb(63, 63, 63);
+}
+.login .loginbox .title .t2{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+.login .loginbox .title .t3{
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 20px;
+    color: rgb(90, 90, 90);
+}
+
+.login .loginbox .body{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login .loginbox .body .dataentry{
+    width: 90%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(226, 219, 255); */
+    border-radius: 10px;
+}
+.login .loginbox .body .dataentry>div{
+    width: 90%;
+    position: relative;
+}
+.login .loginbox .body .dataentry .icon{
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    left: 10px;
+    color: rgb(128, 128, 128);
+}
+.login .loginbox .body .dataentry input{
+    width: 80%;
+    height: 40px;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    border: solid 2px rgb(48, 0, 241);
+    border-radius: 10px;
+    padding-left: 50px;
+    font-size: 17px;
+}
+
+.login .loginbox .body .buttonbox{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login .loginbox .body .buttonbox .btn{
+    width: 80%;
+    height: 40px;
+    background-color: rgb(48, 0, 241);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.login .loginbox .body .buttonbox .btn:hover{
+    cursor: pointer;
+    scale: 0.97;
+    transition: 200ms;
+}
+.login .loginbox .body .buttonbox .btn:active{
+    scale: 0.95;
+    transition: 50ms;
+}
+.login .loading{
+    animation: loading ease-in-out 1s infinite;
+    font-size: 30px;
+}
+@keyframes loading{
+    0%{rotate: 0deg;}
+    100%{rotate: 360deg;}
+}

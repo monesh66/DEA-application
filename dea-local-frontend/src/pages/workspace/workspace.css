@@ -1,0 +1,151 @@
+.workspace{
+    width: calc(100% - 75px);
+    height: 100%;
+    margin-left: 75px;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.workspace>.head{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+.workspace>.body{
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.workspace>.head>.title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.workspace .body .content{
+    width: 95%;
+    height: 95%;
+}
+.workspace .body .content .livebundle{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.158);
+}
+.workspace .body .content .livebundle .head{
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 2px black;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+}
+.workspace .body .content .livebundle .head .title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+
+.workspace .body .content .livebundle .body{
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.workspace .body .content .livebundle .body .loading{
+    width: 150px;
+    height: 100px;
+}
+.workspace .body .content .livebundle .body .loading .iconbox{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.workspace .body .content .livebundle .body .loading .txt{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+.workspace .body .content .livebundle .body .loading .iconbox .icon{
+    font-size: 30px;
+    animation: loading 1s linear infinite;
+}
+.workspace .body .content .livebundle .body .error{
+    font-size: 17px;
+    color: red;
+}
+
+
+.workspace .body .content .livebundle .body .list{
+    width: 95%;
+    height: 95%;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100px;
+}
+.workspace .body .content .livebundle .body .list .ctn{
+    height: 60px;
+    width: 220px;
+    background-color: rgb(162, 131, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: flex;
+}
+.workspace .body .content .livebundle .body .list .ctn:hover{
+    cursor: pointer;
+    transition: 200ms;
+    background-color: rgb(135, 84, 255);
+}
+.workspace .body .content .livebundle .body .list .ctn .left{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.workspace .body .content .livebundle .body .list .ctn .right{
+    width: 30%;
+    height: 100%;
+}
+.workspace .body .content .livebundle .body .list .ctn .right .percentage{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.workspace .body .content .livebundle .body .list .ctn .right .value{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+}

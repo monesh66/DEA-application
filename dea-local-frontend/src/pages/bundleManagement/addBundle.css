@@ -1,0 +1,311 @@
+.addBundle{
+    width: calc(100% - 75px);
+    height: 100%;
+    margin-left: 75px;
+    background-color: var(--background-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.addBundle>.head{
+    width: 100%;
+    height: 50px;
+    background-color: var(--background-light);
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+.addBundle>.body{
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.addBundle>.head>.title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.addBundle>.body .content{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addBundle .content .box{
+    width: 1200px;
+    height: 600px;
+    background-color: var(--background-light);
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+
+}
+.addBundle .content .box .left{
+    width: 50%;
+    height: 100%;
+    /* border-right: solid 2px black ; */
+}
+.addBundle .content .box .left .head{
+    width: 100%;
+    height: 50px;
+    /* border-bottom: 2px black solid; */
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.addBundle .content .box .left .head p{
+    margin-left: 30px;
+}
+.addBundle .content .box .left .body{
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.addBundle .content .box .left .body .itm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.addBundle .content .box .left .body .bn{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+}
+.addBundle .content .box .left .body .bn input{
+    width: 300px;
+    height: 35px;
+    background-color: var(--background-light);
+    border: solid 2px var(--primary-dark);
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 17px;
+    padding: 1px 10px;
+}
+.addBundle .content .box .left .body .am{
+    width: 100%;
+    height: 200px;
+}
+.addBundle .content .box .left .body .left{
+    width: 40%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.addBundle .content .box .left .body .left p{
+    margin-left: 30px;
+}
+.addBundle .content .box .left .body .right{
+    width: 60%;
+}
+.addBundle .content .box .left .body .dl{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    
+}
+.addBundle .content .box .left .body .dl input{
+    border:solid 2px var(--primary-dark);
+    padding: 10px 5px;
+    font-size: 17px;
+    width: 200px;
+    border-radius: 10px;
+}
+.addBundle .content .box .left .body .am{
+    height: 300px;
+    margin-top: 40px;
+    align-items: start;
+}
+.addBundle .content .box .left .body .am .left{
+    align-items: start;
+}
+.addBundle .content .box .left .body .am .right{
+    /* border: solid 2px var(--primary-dark); */
+    width: 60%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: var(--background-dark);
+        display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addBundle .content .box .right .error{
+    color: red;
+}
+.addBundle .content .box .right .loading{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.addBundle .content .box .loading .top{
+    height: 80px;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.addBundle .content .box .loading .top .icon{
+    animation: loading 1s linear infinite;
+}
+.addBundle .content .box .left .body .am .membersList{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.addBundle .content .box .left .body .am .membersList .ls{
+    width: calc(100% - 20px);
+    margin-left: 5px;
+    height: 50px;
+    overflow: hidden;
+    /* border: solid 1px var(--background-dark); */
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: var(--background-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addBundle .content .box .left .body .am .membersList .ls:hover{
+    background-color: var(--primary-light);
+    transition: 200ms;
+}
+.addBundle .content .box .left .body .am .membersList .ls .left{
+    font-size: 17px;
+    font-weight: 500;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.addBundle .content .box .left .body .am .membersList .ls .right{
+    width: 20%;
+    height: 100%;
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addBundle .content .box .left .body .am .membersList .ls .right .circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    border: solid 2px var(--primary-dark);
+    background-color: var(--background-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addBundle .content .box .left .body .am .membersList .ls .right .highlight{
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+    background-color: var(--primary-dark);
+    border-radius: 10px;
+}
+
+
+.addBundle .content .box>.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.addBundle .content .box>.right .file{
+    width: 90%;
+    height: calc(100% - 100px);
+    margin-top: 20px;
+    border: solid 2px var(--primary-dark);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+}
+.addBundle .content .box>.right .file .head{
+    width: 100%;
+    height: 50px;
+    background-color: var(--background-light);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: solid 2px var(--primary-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.addBundle .content .box>.right .file .body{
+    width: 100%;
+    height: calc(100% - 102px);
+    background-color: var(--background-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addBundle .content .box>.right .createbtn{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addBundle .content .box>.right .createbtn input{
+    width: 80%;
+    height: 50px;
+    background-color: rgb(0, 193, 0);
+    border-radius: 10px;
+    font-size: 20px;
+}
+.addBundle .content .box>.right .createbtn input:hover{
+    transition: 100ms;
+    cursor: pointer;
+    scale: 0.99;
+}
+.addBundle .content .box>.right .createbtn input:active{
+    transition: 50ms;
+    cursor: pointer;
+    scale: 1;
+}
+.addBundle .content .box>.right .fileList{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.addBundle .content .box>.right .fileList .lss{
+    width: 90%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-light);
+    border-radius: 5px;
+    border: solid 1px var(--primary-dark);
+}
+.addBundle .content .box>.right .fileList .lss .img{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
